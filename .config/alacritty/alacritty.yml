@@ -17,6 +17,7 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
+  opacity: 0.4
   dimensions:
     columns: 0
     lines: 0
@@ -42,7 +43,6 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
   decorations: full
-
   # When true, alacritty starts maximized.
   #start_maximized: false
 
@@ -114,7 +114,7 @@ font:
     #style: Italic
 
   # Point size
-  size: 11.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -253,8 +253,8 @@ bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-window.opacity: 1.0
-
+#window.opacity: 0.7
+  #opacity: 0.4
 # Mouse bindings
 #
 # Available fields:
@@ -565,3 +565,30 @@ key_bindings:
   - { key: F11,      mods: Super,   chars: "\x1b[23;3~"                      }
   - { key: F12,      mods: Super,   chars: "\x1b[24;3~"                      }
   - { key: NumpadEnter,             chars: "\n"                              }
+# BEGIN ACE
+colors:
+  primary:
+    background: '#0A142C'
+    foreground: '#7fc1e8'
+  cursor:
+    text:       '#0A142C'
+    cursor:     '#7fc1e8'
+  normal:
+    black:      '#0A142C'
+    red:        '#0A398B'
+    green:      '#1B549C'
+    yellow:     '#0954AD'
+    blue:       '#556999'
+    magenta:    '#0B72CB'
+    cyan:       '#609BAB'
+    white:      '#7fc1e8'
+  bright:
+    black:      '#5887a2'
+    red:        '#0A398B'
+    green:      '#1B549C'
+    yellow:     '#0954AD'
+    blue:       '#556999'
+    magenta:    '#0B72CB'
+    cyan:       '#609BAB'
+    white:      '#7fc1e8'
+# END ACE
